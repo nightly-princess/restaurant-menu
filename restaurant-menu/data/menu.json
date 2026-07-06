@@ -1,3 +1,61 @@
 {
-    "_comment": "dishes, prices, image paths"
+  "restaurant": {
+    "name": "Los Pollos Hermanos",
+    "social": {
+      "instagram": "https://instagram.com/lospolloshermanos",
+      "facebook": "https://facebook.com/lospolloshermanos"
+    }
+  },
+  "categories": [
+    {
+      "id": "starters",
+      "name": {
+        "en": "Starters & Sides",
+        "es": "Entradas y Acompañamientos",
+        "de": "Vorspeisen & Beilagen"
+      },
+      "dishes": [
+        {
+          "id": "spice_curls",
+          "name": {
+            "en": "Signature Spice Curls",
+            "es": "Papas Rizadas Especiales",
+            "de": "Spezial-Gewürz-Pommes"
+          },
+          "description": {
+            "en": "Curly fries tossed in our secret southwestern seasoning blend.",
+            "es": "Papas fritas en espiral sazonadas con nuestra mezcla secreta del suroeste.",
+            "de": "Spiralkartoffeln, gewendet in unserer geheimen Südwesten-Gewürzmischung."
+          },
+          "price": 450,
+          "image": "assets/images/spice_curls.jpg"
+        }
+      ]
+    },
+    {
+      "id": "mains",
+      "name": {
+        "en": "Main Dishes",
+        "es": "Platos Principales",
+        "de": "Hauptgerichte"
+      },
+      "dishes": [
+        {
+          "id": "chicken_bucket",
+          "name": {
+            "en": "The Hermanos Bucket",
+            "es": "El Balde Hermanos",
+            "de": "Der Hermanos-Eimer"
+          },
+          "description": {
+            "en": "Our famous golden fried chicken, crispy on the outside, juicy on the inside.",
+            "es": "Nuestro famoso pollo frito dorado, crujiente por fuera y jugoso por dentro.",
+            "de": "Unser berühmtes goldbraun frittiertes Hähnchen, außen knusprig, innen saftig."
+          },
+          "price": 1899,
+          "image": "assets/images/chicken_bucket.jpg"
+        }
+      ]
+    }
+  ]
 }

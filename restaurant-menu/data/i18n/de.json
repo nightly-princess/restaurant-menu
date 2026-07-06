@@ -1,3 +1,6 @@
 {
-    "_comment": "Deutsche Sprache"
+  "menu_title": "Menü",
+  "dark_mode": "Dunkler Modus",
+  "show_images": "Bilder anzeigen",
+  "language": "Sprache"
 }
