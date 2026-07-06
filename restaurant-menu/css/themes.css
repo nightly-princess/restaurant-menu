@@ -1,0 +1,18 @@
+/* CSS variables for light/dark that uses config.css's variables. */
+[data-theme="light"] {
+  background-color: var(--light-bg);
+  color: var(--light-text);
+}
+
+[data-theme="dark"] {
+  background-color: var(--dark-bg);
+  color: var(--dark-text);
+}
+
+a, .btn-primary {
+  color: var(--accent-color);
+}
+
+body {
+  font-family: var(--font-family);
+}
