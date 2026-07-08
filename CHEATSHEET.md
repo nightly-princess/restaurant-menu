@@ -27,5 +27,10 @@ First item in an array is `[0]`, not `[1]`.
 `menu.restaurant.name` vs `menu["restaurant"]["name"]` — same thing, dot notation used when you
 know the key name ahead of time.
 
+### Does a function return a Promise?
+Not all slow functions do — only ones designed that way (fetch, .json()).
+Older functions like setTimeout use callbacks instead. Check MDN's
+"Return value" section to know for sure.
+
 ## Notes to self
 - This is a personal project to learn javascipt so I'll be writing down stuff I see...
