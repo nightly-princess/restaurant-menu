@@ -32,5 +32,11 @@ Not all slow functions do — only ones designed that way (fetch, .json()).
 Older functions like setTimeout use callbacks instead. Check MDN's
 "Return value" section to know for sure.
 
+### .forEach(callback)
+Runs a block of code once for every item in an array. Used to loop over
+menu.categories, and nested inside, over category.dishes — this is how
+"for each category, for each dish" gets written in JS.
+Used in: data.js
+
 ## Notes to self
 - This is a personal project to learn javascipt so I'll be writing down stuff I see...

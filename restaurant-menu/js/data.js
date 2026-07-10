@@ -8,6 +8,16 @@ async function loadMenu() {
 }
 
 loadMenu().then((menu) => {
-  console.log(menu.restaurant.name);
-  console.log(menu.categories[0].dishes[0]);
+  menu.categories.forEach((category) => {
+    category.dishes.forEach((dish) => {
+      const dishDiv = document.createElement("div");
+
+      const dishName = document.createElement("h3");
+      dishName.textContent = dish.name.en;
+
+      dishDiv.appendChild(dishName);
+
+      menuContainer.appendChild(dishDiv);
+    });
+  });
 });

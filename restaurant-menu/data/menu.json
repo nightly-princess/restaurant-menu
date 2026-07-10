@@ -28,7 +28,7 @@
             "de": "Spiralkartoffeln, gewendet in unserer geheimen Südwesten-Gewürzmischung."
           },
           "price": 450,
-          "image": "assets/images/spice_curls.jpg"
+          "image": "https://placehold.co/400x300"
         }
       ]
     },
@@ -53,7 +53,7 @@
             "de": "Unser berühmtes goldbraun frittiertes Hähnchen, außen knusprig, innen saftig."
           },
           "price": 1899,
-          "image": "assets/images/chicken_bucket.jpg"
+          "image": "https://placehold.co/400x300"
         }
       ]
     }
