@@ -1,1 +1,116 @@
-/* resets, typography, layout. */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  padding: calc(var(--spacing-unit) * 4) calc(var(--spacing-unit) * 3);
+  max-width: 720px;
+  margin: 0 auto;
+}
+
+/* Restaurant name — big, bold, tight letter-spacing,
+   echoing the poster's oversized display type */
+.restaurant-name {
+  font-size: 2.5rem;
+  font-weight: 800;
+  letter-spacing: -0.02em;
+  text-transform: uppercase;
+  margin-bottom: calc(var(--spacing-unit) * 1);
+}
+
+.social-links {
+  display: flex;
+  gap: calc(var(--spacing-unit) * 2);
+  font-size: 0.85rem;
+  margin-bottom: calc(var(--spacing-unit) * 5);
+}
+
+.social-links a {
+  color: var(--muted);
+  text-decoration: none;
+  border-bottom: 1px solid currentColor;
+}
+
+/* Category heading — the underline mimics the poster's
+   strong horizontal rules dividing sections */
+.category-heading {
+  font-size: 1.1rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  padding-bottom: calc(var(--spacing-unit) * 1);
+  margin-top: calc(var(--spacing-unit) * 6);
+  margin-bottom: calc(var(--spacing-unit) * 3);
+}
+
+/* Dish card layout */
+.dish-card {
+  display: grid;
+  grid-template-columns: 80px 1fr auto;
+  gap: calc(var(--spacing-unit) * 2);
+  align-items: center;
+  padding: calc(var(--spacing-unit) * 2);
+  margin-bottom: calc(var(--spacing-unit) * 1.5);
+  border-radius: var(--radius);
+}
+
+.dish-card img {
+  width: 80px;
+  height: 80px;
+  object-fit: cover;
+  /* subtle halftone-style filter nodding to the dot-matrix
+     poster texture, without overwhelming a small thumbnail */
+  filter: grayscale(100%) contrast(1.1);
+}
+
+.dish-info h3 {
+  font-size: 1rem;
+  font-weight: 600;
+  margin-bottom: calc(var(--spacing-unit) * 0.5);
+}
+
+.dish-info p.description {
+  font-size: 0.85rem;
+  color: var(--muted);
+  line-height: 1.4;
+}
+
+/* Price rendered in a monospace font — the "ASCII" nod from
+   the reference posters, isolated to just the numbers so the
+   rest of the page stays clean and readable */
+.dish-price {
+  font-family: "Courier New", monospace;
+  font-weight: 700;
+  font-size: 1rem;
+  white-space: nowrap;
+}
+
+html {
+  width: 100%;
+}
+
+body {
+  width: 100%;
+  padding: calc(var(--spacing-unit) * 4) calc(var(--spacing-unit) * 3);
+  max-width: 720px;
+  margin: 0 auto;
+}
+
+.lang-switcher {
+  display: flex;
+  justify-content: flex-end;
+  gap: calc(var(--spacing-unit) * 1);
+  margin-bottom: calc(var(--spacing-unit) * 3);
+}
+
+.lang-switcher button {
+  font-family: var(--font-family);
+  font-size: 0.75rem;
+  font-weight: 700;
+  letter-spacing: 0.05em;
+  padding: calc(var(--spacing-unit) * 0.75) calc(var(--spacing-unit) * 1.25);
+  background: none;
+  cursor: pointer;
+}

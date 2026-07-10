@@ -1,58 +1,118 @@
 {
   "restaurant": {
-    "name": "Los Pollos Hermanos",
+    "name": "Café",
     "social": {
-      "instagram": "https://instagram.com/lospolloshermanos",
-      "facebook": "https://facebook.com/lospolloshermanos"
+      "instagram": "https://instagram.com/cafe",
+      "facebook": "https://facebook.com/cafe"
     }
   },
   "categories": [
     {
-      "id": "starters",
+      "id": "coffee",
       "name": {
-        "en": "Starters & Sides",
-        "es": "Entradas y Acompañamientos",
-        "de": "Vorspeisen & Beilagen"
+        "en": "Coffee",
+        "es": "Café",
+        "de": "Kaffee"
       },
       "dishes": [
         {
-          "id": "spice_curls",
+          "id": "latte",
           "name": {
-            "en": "Signature Spice Curls",
-            "es": "Papas Rizadas Especiales",
-            "de": "Spezial-Gewürz-Pommes"
+            "en": "Latte",
+            "es": "Latte",
+            "de": "Latte Macchiato"
           },
           "description": {
-            "en": "Curly fries tossed in our secret southwestern seasoning blend.",
-            "es": "Papas fritas en espiral sazonadas con nuestra mezcla secreta del suroeste.",
-            "de": "Spiralkartoffeln, gewendet in unserer geheimen Südwesten-Gewürzmischung."
+            "en": "Espresso with steamed milk and a light layer of foam.",
+            "es": "Espresso con leche vaporizada y una capa ligera de espuma.",
+            "de": "Espresso mit aufgeschäumter Milch und leichtem Schaum."
           },
-          "price": 450,
+          "price": 3200,
+          "image": "https://placehold.co/400x300"
+        },
+        {
+          "id": "americano",
+          "name": {
+            "en": "Americano",
+            "es": "Americano",
+            "de": "Americano"
+          },
+          "description": {
+            "en": "Espresso diluted with hot water for a lighter, black coffee.",
+            "es": "Espresso diluido con agua caliente, un café negro más suave.",
+            "de": "Espresso mit heißem Wasser verdünnt, für einen milderen Schwarzkaffee."
+          },
+          "price": 2800,
+          "image": "https://placehold.co/400x300"
+        },
+        {
+          "id": "tea",
+          "name": {
+            "en": "Loose Leaf Tea",
+            "es": "Té en Hojas",
+            "de": "Loser Tee"
+          },
+          "description": {
+            "en": "A rotating seasonal selection, steeped fresh to order.",
+            "es": "Una selección de temporada rotativa, preparada al momento.",
+            "de": "Eine wechselnde saisonale Auswahl, frisch aufgebrüht."
+          },
+          "price": 2600,
           "image": "https://placehold.co/400x300"
         }
       ]
     },
     {
-      "id": "mains",
+      "id": "bakery",
       "name": {
-        "en": "Main Dishes",
-        "es": "Platos Principales",
-        "de": "Hauptgerichte"
+        "en": "Bakery",
+        "es": "Panadería",
+        "de": "Backwaren"
       },
       "dishes": [
         {
-          "id": "chicken_bucket",
+          "id": "banana_bread",
           "name": {
-            "en": "The Hermanos Bucket",
-            "es": "El Balde Hermanos",
-            "de": "Der Hermanos-Eimer"
+            "en": "Banana Bread",
+            "es": "Pan de Banana",
+            "de": "Bananenbrot"
           },
           "description": {
-            "en": "Our famous golden fried chicken, crispy on the outside, juicy on the inside.",
-            "es": "Nuestro famoso pollo frito dorado, crujiente por fuera y jugoso por dentro.",
-            "de": "Unser berühmtes goldbraun frittiertes Hähnchen, außen knusprig, innen saftig."
+            "en": "Moist and dense, baked fresh every morning.",
+            "es": "Húmedo y denso, horneado fresco cada mañana.",
+            "de": "Saftig und dicht, jeden Morgen frisch gebacken."
           },
-          "price": 1899,
+          "price": 2900,
+          "image": "https://placehold.co/400x300"
+        },
+        {
+          "id": "cinnamon_roll",
+          "name": {
+            "en": "Cinnamon Roll",
+            "es": "Rollo de Canela",
+            "de": "Zimtschnecke"
+          },
+          "description": {
+            "en": "Soft laminated dough, cinnamon sugar, cream cheese glaze.",
+            "es": "Masa laminada suave, azúcar con canela, glaseado de queso crema.",
+            "de": "Weicher Plunderteig, Zimtzucker, Frischkäseglasur."
+          },
+          "price": 3400,
+          "image": "https://placehold.co/400x300"
+        },
+        {
+          "id": "yogurt_bowl",
+          "name": {
+            "en": "Yogurt Bowl",
+            "es": "Bowl de Yogur",
+            "de": "Joghurt-Bowl"
+          },
+          "description": {
+            "en": "Greek yogurt, seasonal fruit, honey, house granola.",
+            "es": "Yogur griego, fruta de estación, miel, granola de la casa.",
+            "de": "Griechischer Joghurt, saisonales Obst, Honig, hausgemachtes Granola."
+          },
+          "price": 3600,
           "image": "https://placehold.co/400x300"
         }
       ]

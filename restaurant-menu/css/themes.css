@@ -1,18 +1,44 @@
-/* CSS variables for light/dark that uses config.css's variables. */
 [data-theme="light"] {
-  background-color: var(--light-bg);
-  color: var(--light-text);
+  --bg: var(--light-bg);
+  --surface: var(--light-surface);
+  --text: var(--light-text);
+  --muted: var(--light-muted);
+  --border: var(--light-border);
 }
 
 [data-theme="dark"] {
-  background-color: var(--dark-bg);
-  color: var(--dark-text);
-}
-
-a, .btn-primary {
-  color: var(--accent-color);
+  --bg: var(--dark-bg);
+  --surface: var(--dark-surface);
+  --text: var(--dark-text);
+  --muted: var(--dark-muted);
+  --border: var(--dark-border);
 }
 
 body {
+  background-color: var(--bg);
+  color: var(--text);
   font-family: var(--font-family);
+}
+
+.dish-card {
+  background-color: var(--surface);
+  border: 1px solid var(--border);
+}
+
+.category-heading {
+  border-bottom: 2px solid var(--border);
+}
+
+.dish-price {
+  color: var(--accent-color);
+}
+
+.lang-switcher button {
+  color: var(--muted);
+  border: 1px solid var(--border);
+}
+
+.lang-switcher button:hover {
+  color: var(--text);
+  border-color: var(--text);
 }

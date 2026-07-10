@@ -1,22 +1,42 @@
 :root {
-  /* ============================
-     EDIT THESE VALUES TO CUSTOMIZE
-     Do not add or remove lines — just change the values after the colon.
-     ============================ */
+  /* ============================================================
+     CAFÉ — SITE SETTINGS
+     Edit the values AFTER each colon below. Don't touch anything
+     else (the names before the colon, the semicolons, or the
+     curly braces { } ) or the site may stop working.
+     ============================================================ */
 
-  /* Main accent color (buttons, links, highlights) */
-  --accent-color: #d94f4f;
+  /* ---- FONT ----
+     The font used for all text on the site. */
+  --font-family: "Helvetica Neue", Arial, sans-serif;
 
-  /* Font for all text */
-  --font-family: "Poppins", sans-serif;
+  /* ---- ACCENT COLOR ----
+     Used for buttons, links, and small highlighted details.
+     Format: a hex color code, always starting with #
+     Example: #1a1a1a is near-black, #d94f4f is a brick red */
+  --accent-color: #1a1a1a;
 
-  /* ---- Light mode colors ---- */
-  --light-bg: #ffffff;
-  --light-text: #1a1a1a;
+  /* ---- LIGHT MODE COLORS ---- */
+  --light-bg: #f7f6f3;        /* page background, off-white */
+  --light-surface: #ffffff;   /* dish card background */
+  --light-text: #111111;      /* main text color */
+  --light-muted: #6b6b6b;     /* description text, secondary info */
+  --light-border: #1a1a1a;    /* lines and borders */
 
-  /* ---- Dark mode colors ---- */
-  --dark-bg: #121212;
+  /* ---- DARK MODE COLORS ---- */
+  --dark-bg: #0d0d0d;
+  --dark-surface: #1a1a1a;
   --dark-text: #f5f5f5;
-}
+  --dark-muted: #a3a3a3;
+  --dark-border: #f5f5f5;
 
-  /* Config.css is for the end-users that want to personalize how the menu page will look for their project. */
+  /* ---- SPACING ----
+     One base unit that everything else is a multiple of.
+     Increasing this makes the WHOLE site feel more spacious. */
+  --spacing-unit: 8px;
+
+  /* ---- CORNER ROUNDING ----
+     0 = sharp square corners (matches the poster references)
+     Higher number = softer, rounder cards */
+  --radius: 0px;
+}
