@@ -54,6 +54,12 @@ function renderMenu(menu, lang) {
   });
 }
 
+const imageToggle = document.getElementById("toggle-images");
+
+imageToggle.addEventListener("change", () => {
+  menuContainer.classList.toggle("hide-images", !imageToggle.checked);
+});
+
 loadMenu().then((menu) => {
   renderMenu(menu, currentLang);
 

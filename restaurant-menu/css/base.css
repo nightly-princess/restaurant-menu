@@ -114,3 +114,7 @@ body {
   background: none;
   cursor: pointer;
 }
+
+.hide-images .dish-card img {
+  visibility: hidden;
+}
