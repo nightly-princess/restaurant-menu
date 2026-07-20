@@ -6,3 +6,5 @@ Just a simple restaurant menu.
 - Better support for screen readers.
 - A dashboard so non-technical users can change the prices and details of the menu.
 - Options for multiple languages.
+
+**This project is a work-in-progress restaurant/café menu built to learn vanilla JavaScript.**
