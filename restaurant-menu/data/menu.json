@@ -1,9 +1,9 @@
 {
   "restaurant": {
-    "name": "Café",
+    "name": "Cool Café",
     "social": {
-      "instagram": "https://instagram.com/cafe",
-      "facebook": "https://facebook.com/cafe"
+      "instagram": "https://instagram.com/cool-cafe",
+      "facebook": "https://facebook.com/cool-cafe"
     }
   },
   "categories": [

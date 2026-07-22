@@ -11,20 +11,39 @@ async function loadMenu() {
 function renderMenu(menu, lang) {
   menuContainer.innerHTML = "";
   
+ const restaurantName = document.createElement("h1");
+  restaurantName.className = "restaurant-name";
+  restaurantName.textContent = menu.restaurant.name;
+  menuContainer.appendChild(restaurantName);
+
+  const socialLinks = document.createElement("div");
+  socialLinks.className = "social-links";
+
+  const instagramLink = document.createElement("a");
+  instagramLink.href = menu.restaurant.social.instagram;
+  instagramLink.textContent = "Instagram";
+
+  const facebookLink = document.createElement("a");
+  facebookLink.href = menu.restaurant.social.facebook;
+  facebookLink.textContent = "Facebook";
+
+  socialLinks.appendChild(instagramLink);
+  socialLinks.appendChild(facebookLink);
+  menuContainer.appendChild(socialLinks);
+
   menu.categories.forEach((category) => {
     const categoryHeading = document.createElement("h2");
     categoryHeading.className = "category-heading";
     categoryHeading.textContent = category.name[lang];
     menuContainer.appendChild(categoryHeading);
-
+    
     category.dishes.forEach((dish) => {
       const dishCard = document.createElement("div");
       dishCard.className = "dish-card";
 
       const dishImage = document.createElement("img");
       dishImage.src = dish.image;
-      dishImage.alt = dish.name[lang];
-
+      dishImage.alt = "";
       const dishInfo = document.createElement("div");
       dishInfo.className = "dish-info";
 
