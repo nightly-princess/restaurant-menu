@@ -1,5 +1,5 @@
 const menuContainer = document.getElementById("menu-container");
-
+const langButtons = document.querySelectorAll(".lang-switcher button");
 let currentLang = localStorage.getItem("lang") || "en";
 
 async function loadMenu() {
@@ -62,13 +62,20 @@ imageToggle.addEventListener("change", () => {
 
 loadMenu().then((menu) => {
   renderMenu(menu, currentLang);
+  updateLangButtonStates(currentLang);
 
-  const langButtons = document.querySelectorAll(".lang-switcher button");
   langButtons.forEach((button) => {
     button.addEventListener("click", () => {
       currentLang = button.dataset.lang;
       localStorage.setItem("lang", currentLang);
       renderMenu(menu, currentLang);
+      updateLangButtonStates(currentLang);
     });
   });
 });
+
+function updateLangButtonStates(lang) {
+  langButtons.forEach((button) => {
+    button.setAttribute("aria-pressed", button.dataset.lang === lang);
+  });
+}
