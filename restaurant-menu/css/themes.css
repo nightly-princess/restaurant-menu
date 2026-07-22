@@ -4,6 +4,7 @@
   --text: var(--light-text);
   --muted: var(--light-muted);
   --border: var(--light-border);
+  --accent: var(--light-accent);
 }
 
 [data-theme="dark"] {
@@ -12,6 +13,7 @@
   --text: var(--dark-text);
   --muted: var(--dark-muted);
   --border: var(--dark-border);
+  --accent: var(--dark-accent);
 }
 
 body {
@@ -30,7 +32,7 @@ body {
 }
 
 .dish-price {
-  color: var(--accent-color);
+  color: var(--accent);
 }
 
 .lang-switcher button {
@@ -41,4 +43,8 @@ body {
 .lang-switcher button:hover {
   color: var(--text);
   border-color: var(--text);
+}
+
+.dish-price {
+  color: var(--accent-color);
 }

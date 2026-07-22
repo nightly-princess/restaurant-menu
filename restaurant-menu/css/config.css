@@ -10,11 +10,12 @@
      The font used for all text on the site. */
   --font-family: "Helvetica Neue", Arial, sans-serif;
 
-  /* ---- ACCENT COLOR ----
-     Used for buttons, links, and small highlighted details.
-     Format: a hex color code, always starting with #
-     Example: #1a1a1a is near-black, #d94f4f is a brick red */
-  --accent-color: #1a1a1a;
+/* ---- ACCENT COLOR ----
+     Used for the price text and highlighted details.
+     Needs a separate light/dark version so it stays visible
+     no matter which mode is active. */
+--light-accent: #1a1a1a;
+--dark-accent: #f5f5f5;
 
   /* ---- LIGHT MODE COLORS ---- */
   --light-bg: #f7f6f3;        /* page background, off-white */
@@ -39,4 +40,6 @@
      0 = sharp square corners (matches the poster references)
      Higher number = softer, rounder cards */
   --radius: 0px;
+
+    color-scheme: light dark;
 }
