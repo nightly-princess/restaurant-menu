@@ -10,8 +10,7 @@ body {
   padding: 0;
 }
 
-/* Restaurant name — big, bold, tight letter-spacing,
-   echoing the poster's oversized display type */
+/* Restaurant name, change this to modify how it'll look.*/
 .restaurant-name {
   font-size: 2.5rem;
   font-weight: 800;
@@ -40,8 +39,7 @@ body {
   border-bottom: 1px solid currentColor;
 }
 
-/* Category heading — the underline mimics the poster's
-   strong horizontal rules dividing sections */
+/* Category heading, change this to modify how it'll look. */
 .category-heading {
   font-size: 1.1rem;
   font-weight: 700;
@@ -84,9 +82,6 @@ body {
   line-height: 1.4;
 }
 
-/* Price rendered in a monospace font — the "ASCII" nod from
-   the reference posters, isolated to just the numbers so the
-   rest of the page stays clean and readable */
 .dish-price {
   font-family: "Courier New", monospace;
   font-weight: 700;
