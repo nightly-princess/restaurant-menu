@@ -7,13 +7,13 @@ Just a simple restaurant menu.
 - [x] Options for multiple languages.
 
 - [ ] A dashboard so non-technical users can change the prices and details of the menu.
-  - [ ] **Phase 1 — Local editing tool (no backend)**
-    - [ ] Build `admin/index.html` — a separate page, not linked from the public menu
+  - [ ] **Phase 1 - Local editing tool (no backend)**
+    - [ ] Build `admin/index.html`, a separate page, not linked from the public menu
     - [ ] Load the current `menu.json` into an editable form (one section per dish: name, description, price, image URL, per-language fields)
-    - [ ] "Download updated menu.json" button — exports the edited data as a file the person then manually replaces in `data/` and commits
-    - [ ] Basic validation (price must be a number, required fields can't be empty) so a non-technical user can't accidentally corrupt the JSON structure
-  - [ ] **Phase 2 — Personalization controls**
-    - [ ] Accent color picker, font selector — writes directly into `config.css` values (or applies live via `style.setProperty` for preview, then exports)
+    - [ ] "Download updated menu.json" button, exports the edited data as a file the person then manually replaces in `data/` and commits
+    - [ ] Basic validation (price must be a number, required fields can't be empty) so someone that isn't tech-savvy can't accidentally corrupt the JSON structure
+  - [ ] **Phase 2 - Personalization controls**
+    - [ ] Accent color picker, font selector, writes directly into `config.css` values (or applies live via `style.setProperty` for preview, then exports)
     - [ ] Favicon upload/replace
     - [ ] Restaurant name + social links editing
   - [ ] **Phase 3 — Onboarding**
