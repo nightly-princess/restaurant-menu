@@ -1,1 +1,16 @@
 .DS_Store
+.AppleDouble
+.LSOverride
+._*
+.Spotlight-V100
+.Trashes
+.idea/
+*.swp
+*~
+.env
+.env.*
+!.env.example
+node_modules/
+.svelte-kit/
+build/
+dist/
